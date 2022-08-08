@@ -1,0 +1,24 @@
+<div class ="container">
+    <div class = "card">
+        <h3 class="text-center"> Months List</h3>
+        <div class = "card-body">
+            <table class="table table-striped">
+                <thead>
+                    <th>Id</th>
+                    <th> Income</th>
+                    <th> Spending</th>
+                    <th> Balance</th>
+                   
+                </thead>
+                <tbody>
+                    <tr *ngFor = "let month of months">
+                        <td> {{ month.id}}</td>
+                        <td> {{ month.income}}</td>
+                        <td> {{ month.spending}}</td>
+                        <td> {{ month.balance}}</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
